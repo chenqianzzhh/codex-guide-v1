@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>手机版 - Codex 编程学习指南</title>
+  <link rel="stylesheet" href="mobile.css">
+</head>
+<body>
+  <header class="mobile-hero" id="top">
+    <p class="eyebrow">手机版阅读页</p>
+    <h1>Codex 编程学习指南</h1>
+    <p>给技术小白的一份陪跑手册：先把想法说清楚，再和 Codex 一起拆小、实现、验收和归档。</p>
+    <div class="hero-actions">
+      <a href="#start">从第一步开始</a>
+      <a href="#templates">复制模板</a>
+    </div>
+  </header>
+
+  <nav class="mobile-jump" aria-label="章节快速跳转">
+    <label for="sectionSelect">章节</label>
+    <select id="sectionSelect">
+      <option value="#start">快速入门</option>
+      <option value="#workflow">标准工作流</option>
+      <option value="#basics">技术基础</option>
+      <option value="#templates">对话模板</option>
+      <option value="#case">复杂系统与案例</option>
+      <option value="#ship">验收部署归档</option>
+    </select>
+  </nav>
+
+  <main>
+    <section class="focus-card" aria-labelledby="three-things">
+      <p class="eyebrow">先别急着写代码</p>
+      <h2 id="three-things">你现在只要抓住三件事</h2>
+      <ol class="focus-list">
+        <li><strong>说清目标</strong><span>这个项目给谁用，解决什么问题。</span></li>
+        <li><strong>拆小版本</strong><span>第一版只做能跑起来的核心功能。</span></li>
+        <li><strong>按清单验收</strong><span>能打开、能使用、能解释、能回看。</span></li>
+      </ol>
+    </section>
+
+    <section class="directory" id="directory" aria-labelledby="directory-title">
+      <p class="eyebrow">目录</p>
+      <h2 id="directory-title">选择你现在要看的部分</h2>
+      <div class="directory-grid">
+        <a href="#start"><span>01</span><strong>快速入门</strong><em>先分清你和 Codex 各自负责什么。</em></a>
+        <a href="#workflow"><span>02</span><strong>标准工作流</strong><em>按步骤做，项目才不容易散。</em></a>
+        <a href="#basics"><span>03</span><strong>技术基础</strong><em>先补项目常识，不用先学完整编程课。</em></a>
+        <a href="#templates"><span>04</span><strong>对话模板</strong><em>复制后替换方括号里的内容就能用。</em></a>
+        <a href="#case"><span>05</span><strong>复杂系统与案例</strong><em>先主数据，再流程、权限和部署。</em></a>
+        <a href="#ship"><span>06</span><strong>验收部署归档</strong><em>写完代码后，把项目稳稳收口。</em></a>
+      </div>
+    </section>
+
+    <section class="mobile-section" id="start">
+      <p class="eyebrow">01 / 快速入门</p>
+      <h2>先记住这个分工</h2>
+      <p class="lead">你不用马上变成程序员，但你要负责说清目标、确认方向、验收结果。Codex 负责拆开、写出来、测一遍、讲明白。</p>
+      <div class="mini-grid">
+        <article>
+          <h3>你负责</h3>
+          <ul>
+            <li>说明项目给谁用。</li>
+            <li>确认第一版先做什么。</li>
+            <li>判断结果是否符合真实想法。</li>
+            <li>按清单验收页面和功能。</li>
+          </ul>
+        </article>
+        <article>
+          <h3>Codex 负责</h3>
+          <ul>
+            <li>把模糊想法拆成任务。</li>
+            <li>写需求、方案和代码。</li>
+            <li>跑检查，修问题。</li>
+            <li>留下文档和下一步建议。</li>
+          </ul>
+        </article>
+      </div>
+      <details class="mobile-details">
+        <summary>新手最容易犯的 5 个错误</summary>
+        <div class="mistake-list">
+          <p><strong>不要说：</strong>帮我做个系统。<br><strong>可以说：</strong>我想做客户管理系统，第一版只做客户录入、客户列表和跟进记录，请先帮我拆 MVP。</p>
+          <p><strong>不要说：</strong>打不开，你修一下。<br><strong>可以说：</strong>我点击登录后页面空白，控制台报错如下。请先定位原因，再做最小范围修复。</p>
+          <p><strong>不要说：</strong>登录、后台、支付、部署都一起做。<br><strong>可以说：</strong>请先做第一版核心流程，高风险功能后面单独检查。</p>
+          <p><strong>不要说：</strong>页面看起来可以就行。<br><strong>可以说：</strong>请同时检查手机端、复制按钮、刷新后数据和测试记录。</p>
+          <p><strong>不要说：</strong>做完就结束。<br><strong>可以说：</strong>请同步更新 README、测试记录和阶段总结。</p>
+        </div>
+      </details>
+      <div class="section-actions"><a href="#directory">回到目录</a><a href="#workflow">下一节</a></div>
+    </section>
+
+    <section class="mobile-section" id="workflow">
+      <p class="eyebrow">02 / 标准工作流</p>
+      <h2>不要跳步骤</h2>
+      <p class="lead">复杂系统不是一句话变出来的。先定目标、拆第一版、做一点、验一点，慢慢堆稳。</p>
+      <ol class="step-list">
+        <li><strong>说清目标</strong><span>给谁用，解决什么问题。</span></li>
+        <li><strong>拆 MVP</strong><span>只保留第一版必须能跑起来的功能。</span></li>
+        <li><strong>写需求文档</strong><span>把目标、范围、验收标准写清楚。</span></li>
+        <li><strong>设计页面和数据</strong><span>先想清页面怎么走、数据放哪里。</span></li>
+        <li><strong>小步开发</strong><span>一次只改一个明确功能。</span></li>
+        <li><strong>测试和修 bug</strong><span>先定位原因，再最小范围修复。</span></li>
+        <li><strong>部署和归档</strong><span>上线前检查环境，完成后整理资料。</span></li>
+      </ol>
+      <div class="section-actions"><a href="#directory">回到目录</a><a href="#basics">下一节</a></div>
+    </section>
+
+    <section class="mobile-section" id="basics">
+      <p class="eyebrow">03 / 技术基础</p>
+      <h2>先补项目常识</h2>
+      <p class="lead">不用先学完整编程课。先知道网页由哪些文件组成，样式在哪里改，按钮为什么会动，最后怎么在浏览器里验收。</p>
+      <div class="basics-list">
+        <article><h3>HTML</h3><p>网页骨架，对应 <code>index.html</code>。</p></article>
+        <article><h3>CSS</h3><p>页面外观，对应 <code>styles.css</code>。</p></article>
+        <article><h3>JavaScript</h3><p>按钮和交互，对应 <code>script.js</code>。</p></article>
+        <article><h3>本地服务</h3><p>更接近真实访问，对应 <code>local-server.mjs</code>。</p></article>
+        <article><h3>浏览器</h3><p>最终验收页面、按钮、手机宽度和报错。</p></article>
+      </div>
+      <div class="section-actions"><a href="#directory">回到目录</a><a href="#templates">下一节</a></div>
+    </section>
+
+    <section class="mobile-section" id="templates">
+      <p class="eyebrow">04 / 对话模板</p>
+      <h2>复制后就能开始</h2>
+      <p class="lead">把方括号里的内容换成你的项目情况，再发给 Codex。</p>
+      <div class="template-list">
+        <details class="template-card" open>
+          <summary><span><strong>项目启动模板</strong><em>刚开始一个新项目时用。</em></span></summary>
+          <pre id="template-start"><code>我想做一个【项目名称】。
+
+目标用户是【目标用户】。
+他们主要想完成【核心任务】。
+
+第一版只需要实现【核心功能 1、2、3】。
+暂时不需要【暂时不做的功能】。
+
+请你先帮我拆需求、设计模块、梳理数据结构和开发步骤。
+先不要直接写代码。</code></pre>
+          <button type="button" data-copy-target="template-start">复制模板</button>
+        </details>
+        <details class="template-card">
+          <summary><span><strong>技术基础补课模板</strong><em>边做项目边补基础时用。</em></span></summary>
+          <pre id="template-basics"><code>我是技术小白，正在做【项目名称】。
+
+请你结合当前项目，用我能听懂的话解释：
+1. 这个项目由哪些主要文件组成
+2. HTML、CSS、JavaScript 分别负责什么
+3. 我应该用什么命令运行或预览
+4. 浏览器里要检查哪些地方
+5. 哪些内容以后涉及后端、数据库或安全
+6. 如果我要继续学习，应该先补哪几块基础</code></pre>
+          <button type="button" data-copy-target="template-basics">复制模板</button>
+        </details>
+        <details class="template-card">
+          <summary><span><strong>需求梳理模板</strong><em>想法还模糊时用。</em></span></summary>
+          <pre id="template-requirement"><code>请你先不要写代码。
+
+请帮我梳理：
+1. 目标用户是谁
+2. 他们最想解决什么问题
+3. 第一版必须做哪些功能
+4. 第一版暂时不做哪些功能
+5. 每个功能怎么验收
+6. 有哪些风险点
+
+请最后整理成一份清晰的需求清单。</code></pre>
+          <button type="button" data-copy-target="template-requirement">复制模板</button>
+        </details>
+        <details class="template-card">
+          <summary><span><strong>页面原型模板</strong><em>做网页或界面前用。</em></span></summary>
+          <pre id="template-prototype"><code>请基于现有需求，先帮我设计页面结构。
+
+请说明：
+1. 第一屏展示什么
+2. 有哪些主要章节或区域
+3. 用户从哪里开始操作
+4. 哪些内容做成卡片、表格或时间线
+5. 电脑端和手机端分别怎么展示
+
+请先给结构方案，不要急着写代码。</code></pre>
+          <button type="button" data-copy-target="template-prototype">复制模板</button>
+        </details>
+        <details class="template-card">
+          <summary><span><strong>开发执行模板</strong><em>准备让 Codex 写代码时用。</em></span></summary>
+          <pre id="template-dev"><code>请按实施计划执行下一步。
+
+要求：
+1. 一次只实现一个小任务
+2. 修改前说明会改哪些文件
+3. 修改后说明实现了什么
+4. 告诉我如何运行和验证
+5. 不要做计划外的大改动
+
+如果发现计划不清楚，请先停下来问我。</code></pre>
+          <button type="button" data-copy-target="template-dev">复制模板</button>
+        </details>
+        <details class="template-card">
+          <summary><span><strong>Bug 排查模板</strong><em>页面打不开或按钮失效时用。</em></span></summary>
+          <pre id="template-bug"><code>我遇到一个 Bug。
+
+现象是：【发生了什么】
+期望是：【本来应该怎样】
+复现步骤：
+1. 【第一步】
+2. 【第二步】
+3. 【第三步】
+
+报错信息是：
+【粘贴报错】
+
+请先判断可能原因，再做最小范围修复。
+修完后请告诉我改了哪些文件，以及我应该怎么验证。</code></pre>
+          <button type="button" data-copy-target="template-bug">复制模板</button>
+        </details>
+        <details class="template-card">
+          <summary><span><strong>测试验收模板</strong><em>功能做完后用。</em></span></summary>
+          <pre id="template-test"><code>请帮我验收这个功能。
+
+请检查：
+1. 是否满足原始需求
+2. 是否有边界情况遗漏
+3. 是否能在电脑端和手机端正常使用
+4. 是否运行了测试或构建
+5. 是否有未完成事项和风险
+
+请把结果分成“通过项、问题项、后续待办”。</code></pre>
+          <button type="button" data-copy-target="template-test">复制模板</button>
+        </details>
+        <details class="template-card">
+          <summary><span><strong>部署检查模板</strong><em>准备上线前用。</em></span></summary>
+          <pre id="template-deploy"><code>请帮我做部署前检查。
+
+请确认：
+1. 本地是否能正常运行
+2. 构建是否通过
+3. 环境变量是否齐全
+4. 密钥是否没有写死在代码里
+5. 关键功能是否验证
+6. 是否有备份和回滚方案
+
+请先列检查结果，不要直接开始部署。</code></pre>
+          <button type="button" data-copy-target="template-deploy">复制模板</button>
+        </details>
+        <details class="template-card">
+          <summary><span><strong>归档整理模板</strong><em>阶段完成后用。</em></span></summary>
+          <pre id="template-archive"><code>请帮我整理这个阶段的归档。
+
+包括：
+1. 完成了什么
+2. 改了哪些文件
+3. 如何运行
+4. 如何验证
+5. 还有哪些待办
+6. 哪些资料需要备份
+7. 哪些资料不能归档，例如密码、密钥、API Key、无关项目源码和缓存目录
+
+请把内容整理成可以放进项目文档的阶段总结。</code></pre>
+          <button type="button" data-copy-target="template-archive">复制模板</button>
+        </details>
+      </div>
+      <div class="section-actions"><a href="#directory">回到目录</a><a href="#case">下一节</a></div>
+    </section>
+
+    <section class="mobile-section" id="case">
+      <p class="eyebrow">05 / 复杂系统与案例</p>
+      <h2>复杂系统要分阶段做</h2>
+      <p class="lead">先做主数据，再加详情、流程、同步、记录、权限和部署。每一步都能验收，项目才不容易失控。</p>
+      <div class="stage-list">
+        <article><span>01</span><p><strong>项目池：</strong>先把项目名称、目标、状态和优先级记下来。</p></article>
+        <article><span>02</span><p><strong>项目详情：</strong>再看每个项目的背景、需求、进度和文档。</p></article>
+        <article><span>03</span><p><strong>进展图：</strong>把状态画出来，一眼看到卡在哪里。</p></article>
+        <article><span>04</span><p><strong>Codex 同步：</strong>把外部会话和项目关联，但不让它取代主数据。</p></article>
+        <article><span>05</span><p><strong>项目轨迹：</strong>记录每次推进，方便回头看决策。</p></article>
+        <article><span>06</span><p><strong>每日简报：</strong>把当天进展沉淀成短摘要。</p></article>
+        <article><span>07</span><p><strong>登录保护：</strong>等核心流程稳定后，再处理账号和权限。</p></article>
+        <article><span>08</span><p><strong>部署备份：</strong>上线前检查环境、日志、备份和回滚方案。</p></article>
+      </div>
+      <div class="section-actions"><a href="#directory">回到目录</a><a href="#ship">下一节</a></div>
+    </section>
+
+    <section class="mobile-section" id="ship">
+      <p class="eyebrow">06 / 验收部署归档</p>
+      <h2>写完代码后要收口</h2>
+      <p class="lead">确认它能打开、能使用、能解释、能回看，并且没有把密码、密钥或无关源码放进归档。</p>
+      <ul class="check-list">
+        <li>Codex 有没有说明改了哪些文件？</li>
+        <li>有没有说明实现了什么？</li>
+        <li>有没有告诉我怎么运行？</li>
+        <li>有没有告诉我怎么验证？</li>
+        <li>有没有运行测试，或者说明为什么没跑？</li>
+        <li>有没有提醒风险和后续待办？</li>
+      </ul>
+      <div class="mini-grid">
+        <article>
+          <h3>部署前</h3>
+          <ul>
+            <li>本地能打开。</li>
+            <li>手机端能阅读。</li>
+            <li>密钥没有写死。</li>
+            <li>关键功能已验证。</li>
+          </ul>
+        </article>
+        <article>
+          <h3>归档时</h3>
+          <ul>
+            <li>保存需求、方案和源码。</li>
+            <li>保存测试记录和部署说明。</li>
+            <li>保存阶段总结和待办。</li>
+            <li>不要保存密码、API Key 和无关源码。</li>
+          </ul>
+        </article>
+      </div>
+      <div class="section-actions"><a href="#directory">回到目录</a><a href="#top">回到顶部</a></div>
+    </section>
+  </main>
+
+  <script src="mobile.js"></script>
+</body>
+</html>
