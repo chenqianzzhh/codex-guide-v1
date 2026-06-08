@@ -606,6 +606,60 @@ code {
   border-color: #a5f3fc;
 }
 
+.site-footer {
+  border-top: 1px solid #dbe5ee;
+  background: #ffffff;
+}
+
+.footer-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 28px;
+  align-items: center;
+  width: min(1180px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 34px 0;
+}
+
+.footer-inner h2 {
+  margin: 0 0 8px;
+  font-size: 24px;
+  line-height: 1.25;
+}
+
+.footer-inner p {
+  max-width: 680px;
+  margin: 0;
+  color: #52606d;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.footer-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  padding: 8px 14px;
+  border: 1px solid #99f6e4;
+  border-radius: 8px;
+  color: #0f766e;
+  background: #e6fffb;
+  font-weight: 800;
+}
+
+.footer-links a:hover,
+.footer-links a:focus-visible {
+  color: #ffffff;
+  background: #0f766e;
+  outline: 3px solid #99f6e4;
+}
+
 @media (max-width: 1040px) {
   .card-grid.three,
   .stage-grid {
@@ -713,6 +767,16 @@ code {
 
   .template-card > summary button {
     width: 100%;
+  }
+
+  .footer-inner {
+    grid-template-columns: 1fr;
+    width: min(100% - 28px, 720px);
+    padding: 26px 0;
+  }
+
+  .footer-links {
+    justify-content: flex-start;
   }
 }
 
