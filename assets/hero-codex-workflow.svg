@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="640" viewBox="0 0 960 640" role="img" aria-labelledby="title desc">
+  <title id="title">Codex 协作流程白板</title>
+  <desc id="desc">一张展示想法、需求、原型、代码、测试、发布和归档流程的首屏插画。</desc>
+  <defs>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#0f172a" flood-opacity="0.12"/>
+    </filter>
+    <linearGradient id="board" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f0fffd"/>
+      <stop offset="100%" stop-color="#ffffff"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto">
+      <path d="M0,0 L7,3 L0,6 Z" fill="#2f7d74"/>
+    </marker>
+  </defs>
+
+  <rect width="960" height="640" fill="#f7faf9"/>
+  <rect x="78" y="58" width="804" height="524" rx="32" fill="url(#board)" stroke="#bdeee8" stroke-width="2" filter="url(#softShadow)"/>
+
+  <g opacity="0.48" stroke="#d7ece8" stroke-width="1">
+    <path d="M150 116 H816"/>
+    <path d="M150 188 H816"/>
+    <path d="M150 260 H816"/>
+    <path d="M150 332 H816"/>
+    <path d="M150 404 H816"/>
+    <path d="M150 476 H816"/>
+  </g>
+
+  <text x="130" y="112" fill="#0f766e" font-family="Microsoft YaHei, Arial, sans-serif" font-size="28" font-weight="800">Codex 项目协作白板</text>
+  <text x="130" y="146" fill="#52606d" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18">把一个模糊想法，拆成可以验证、可以上线、可以归档的小步骤。</text>
+
+  <g transform="translate(130 218)">
+    <rect width="190" height="118" rx="22" fill="#fff7cc" stroke="#f2d36f" stroke-width="2"/>
+    <circle cx="34" cy="34" r="16" fill="#f3c94f"/>
+    <text x="58" y="40" fill="#1f2933" font-family="Microsoft YaHei, Arial, sans-serif" font-size="22" font-weight="800">一个想法</text>
+    <text x="28" y="76" fill="#475569" font-family="Microsoft YaHei, Arial, sans-serif" font-size="17">我想做网页、工具</text>
+    <text x="28" y="100" fill="#475569" font-family="Microsoft YaHei, Arial, sans-serif" font-size="17">或复杂系统</text>
+  </g>
+
+  <path d="M338 277 C382 277 392 214 442 214" fill="none" stroke="#2f7d74" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <path d="M338 277 C382 277 392 341 442 341" fill="none" stroke="#2f7d74" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+
+  <g transform="translate(438 184)">
+    <rect width="250" height="92" rx="24" fill="#ffffff" stroke="#bdeee8" stroke-width="2"/>
+    <rect x="24" y="22" width="58" height="48" rx="16" fill="#ccfbf1"/>
+    <text x="42" y="54" fill="#0f766e" font-family="Microsoft YaHei, Arial, sans-serif" font-size="24" font-weight="900">1</text>
+    <text x="100" y="40" fill="#1f2933" font-family="Microsoft YaHei, Arial, sans-serif" font-size="22" font-weight="800">说清需求</text>
+    <text x="100" y="66" fill="#64748b" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16">给谁用、先做什么</text>
+  </g>
+
+  <g transform="translate(438 310)">
+    <rect width="250" height="92" rx="24" fill="#ffffff" stroke="#bdeee8" stroke-width="2"/>
+    <rect x="24" y="22" width="58" height="48" rx="16" fill="#ccfbf1"/>
+    <text x="42" y="54" fill="#0f766e" font-family="Microsoft YaHei, Arial, sans-serif" font-size="24" font-weight="900">2</text>
+    <text x="100" y="40" fill="#1f2933" font-family="Microsoft YaHei, Arial, sans-serif" font-size="22" font-weight="800">做出原型</text>
+    <text x="100" y="66" fill="#64748b" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16">页面、模板、交互</text>
+  </g>
+
+  <path d="M700 230 C726 230 726 278 752 278" fill="none" stroke="#2f7d74" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <path d="M700 356 C728 356 728 312 752 312" fill="none" stroke="#2f7d74" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+
+  <g transform="translate(734 216)">
+    <rect width="98" height="132" rx="18" fill="#102a43"/>
+    <rect x="14" y="18" width="70" height="12" rx="6" fill="#99f6e4"/>
+    <rect x="14" y="44" width="56" height="10" rx="5" fill="#e2e8f0"/>
+    <rect x="14" y="66" width="68" height="10" rx="5" fill="#e2e8f0"/>
+    <rect x="14" y="88" width="44" height="10" rx="5" fill="#e2e8f0"/>
+    <text x="49" y="120" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="15" font-weight="800">CODE</text>
+  </g>
+
+  <g transform="translate(126 444)">
+    <rect width="164" height="62" rx="18" fill="#e6fffb" stroke="#99f6e4"/>
+    <text x="82" y="39" text-anchor="middle" fill="#0f766e" font-family="Microsoft YaHei, Arial, sans-serif" font-size="20" font-weight="900">测试</text>
+  </g>
+  <g transform="translate(328 444)">
+    <rect width="164" height="62" rx="18" fill="#e6fffb" stroke="#99f6e4"/>
+    <text x="82" y="39" text-anchor="middle" fill="#0f766e" font-family="Microsoft YaHei, Arial, sans-serif" font-size="20" font-weight="900">发布</text>
+  </g>
+  <g transform="translate(530 444)">
+    <rect width="164" height="62" rx="18" fill="#e6fffb" stroke="#99f6e4"/>
+    <text x="82" y="39" text-anchor="middle" fill="#0f766e" font-family="Microsoft YaHei, Arial, sans-serif" font-size="20" font-weight="900">归档</text>
+  </g>
+  <path d="M294 475 H322" stroke="#2f7d74" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <path d="M496 475 H524" stroke="#2f7d74" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+
+  <g transform="translate(720 430)">
+    <rect width="96" height="78" rx="14" fill="#ffffff" stroke="#cbd5e1"/>
+    <path d="M24 26 H72 M24 42 H68 M24 58 H56" stroke="#64748b" stroke-width="5" stroke-linecap="round"/>
+    <text x="48" y="102" text-anchor="middle" fill="#52606d" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="800">记录</text>
+  </g>
+</svg>
