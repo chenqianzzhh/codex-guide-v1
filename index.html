@@ -42,11 +42,12 @@
 
   <main class="page-shell">
     <nav class="side-nav" aria-label="章节导航">
+      <p class="side-nav-title">阅读目录</p>
       <a href="#quick-start">快速入门</a>
       <a href="#workflow">标准工作流</a>
       <a href="#basics">技术基础</a>
       <a href="#templates">对话模板</a>
-      <a href="#systems-case">复杂系统与案例</a>
+      <a href="#systems-case">复杂系统拆解</a>
       <a href="#ship">验收部署归档</a>
     </nav>
 
@@ -57,7 +58,7 @@
         <option value="#workflow">标准工作流</option>
         <option value="#basics">技术基础</option>
         <option value="#templates">对话模板</option>
-        <option value="#systems-case">复杂系统与案例</option>
+        <option value="#systems-case">复杂系统拆解</option>
         <option value="#ship">验收部署归档</option>
       </select>
     </div>
@@ -67,6 +68,10 @@
         <p class="section-kicker">01 / Quick Start</p>
         <h2>快速入门</h2>
         <p class="section-lead">先记住一个分工：你不用马上变成程序员，但你要负责说清目标、确认方向、验收结果。Codex 负责把事情拆开、写出来、测一遍、讲明白。</p>
+        <div class="chapter-points" aria-label="本章重点">
+          <span>本章重点</span>
+          <p>分清用户负责判断，Codex 负责执行；先把目标说清楚，后面的开发才不会跑偏。</p>
+        </div>
 
         <div class="split-card">
           <div>
@@ -139,6 +144,10 @@
         <p class="section-kicker">02 / Workflow</p>
         <h2>标准工作流</h2>
         <p class="section-lead">不要跳步骤。复杂系统不是一句话变出来的，而是先定目标、拆第一版、做一点、验一点，慢慢堆稳。</p>
+        <div class="chapter-points" aria-label="本章重点">
+          <span>本章重点</span>
+          <p>先定范围，再小步开发，最后按清单收口。每一步都要能说清“做什么、怎么验、下一步是什么”。</p>
+        </div>
         <ol class="timeline compact">
           <li><strong>说清目标</strong><span>先讲给谁用、解决什么问题。</span></li>
           <li><strong>拆 MVP</strong><span>只保留第一版必须能跑起来的功能。</span></li>
@@ -164,104 +173,87 @@
       <section id="basics" class="section">
         <p class="section-kicker">03 / Basics</p>
         <h2>技术基础</h2>
-        <p class="section-lead">你不需要先学完整套编程课。先补一点项目常识：网页由哪些文件组成，样式在哪里改，按钮为什么会动，最后要怎么在浏览器里验收。</p>
-        <div class="warning-card neutral">
-          <strong>第一批：网页基础。</strong>先看懂 HTML、CSS、JavaScript、本地服务和浏览器验收。等你开始做需要保存数据的工具或系统，再补后端、数据库、接口、权限和安全。
+        <p class="section-lead">了解基础知识，不懂就让 Codex 给你用大白话解释。用最简单的方式理解：页面由什么组成，样式在哪里改，数据怎么流动，上线前要检查什么。</p>
+        <div class="chapter-points" aria-label="本章重点">
+          <span>本章重点</span>
+          <p>先看懂项目结构，再理解页面、数据、上线和安全。你不需要一次学完，只要知道遇到问题时该让 Codex 解释哪一块。</p>
         </div>
 
-        <div class="details-stack">
-          <details class="guide-details" open>
-            <summary>HTML：网页骨架</summary>
-            <p>HTML 决定网页里有什么内容，比如标题、段落、导航、卡片和按钮。</p>
+        <div class="learning-roadmap">
+          <article class="learning-chapter">
+            <div class="chapter-heading">
+              <span>3.1</span>
+              <div>
+                <h3>网页三件套</h3>
+                <p>先知道网页由谁搭骨架、谁管外观、谁负责交互。</p>
+              </div>
+            </div>
+            <p class="focus-mark">重点：HTML 管结构，CSS 管外观，JavaScript 管交互。</p>
             <dl class="learning-dl">
-              <dt>对应当前项目</dt><dd><code>02_网页应用/prototype/index.html</code></dd>
-              <dt>学到什么程度</dt><dd>知道网页文字和章节主要写在 HTML 里，能让 Codex 帮你定位要改哪一段。</dd>
-              <dt>可以这样问</dt><dd>请解释 `index.html` 里有哪些主要区域。我要改网页文字时，应该找哪些位置？</dd>
-              <dt>小练习</dt><dd>试着找到第一屏标题在 HTML 里的位置。</dd>
+              <dt>HTML</dt><dd>决定网页里有什么内容，比如标题、段落、导航、卡片和按钮。对应当前项目里的 <code>index.html</code>。</dd>
+              <dt>CSS</dt><dd>决定颜色、字号、间距、卡片、两栏布局和手机端适配。对应当前项目里的 <code>styles.css</code>。</dd>
+              <dt>JavaScript</dt><dd>负责复制按钮、导航高亮、弹窗、切换等用户操作后的反应。对应当前项目里的 <code>script.js</code>。</dd>
+              <dt>可以这样问</dt><dd>请用大白话解释这个项目里 HTML、CSS、JavaScript 分别负责什么，并举当前页面里的例子。</dd>
             </dl>
-          </details>
+          </article>
 
-          <details class="guide-details">
-            <summary>CSS：网页外观</summary>
-            <p>CSS 决定颜色、字号、间距、卡片、两栏布局和手机端适配。</p>
+          <article class="learning-chapter">
+            <div class="chapter-heading">
+              <span>3.2</span>
+              <div>
+                <h3>本地运行与浏览器验收</h3>
+                <p>先在自己电脑上打开，再用浏览器看真实效果。</p>
+              </div>
+            </div>
+            <p class="focus-mark">重点：本地服务负责预览，浏览器负责最终验收。</p>
             <dl class="learning-dl">
-              <dt>对应当前项目</dt><dd><code>02_网页应用/prototype/styles.css</code></dd>
-              <dt>学到什么程度</dt><dd>知道样式错乱、文字挤压、手机端溢出，通常要检查 CSS 布局。</dd>
-              <dt>可以这样问</dt><dd>请根据截图定位这个排版问题，先说明原因，再做最小 CSS 修改。</dd>
-              <dt>小练习</dt><dd>试着让 Codex 解释某一段 CSS 为什么会影响排版。</dd>
+              <dt>本地服务</dt><dd>在自己电脑上临时启动一个网页地址，让浏览器像访问网站一样访问项目。</dd>
+              <dt>当前命令</dt><dd>可以用 <code>node local-server.mjs 8010</code> 在原型目录启动本地预览。</dd>
+              <dt>浏览器验收</dt><dd>检查页面能否打开、中文是否正常、导航是否跳转、复制按钮是否工作、窄屏是否溢出。</dd>
+              <dt>可以这样问</dt><dd>请解释这个本地预览命令每一部分是什么意思。如果网页打不开，我该按什么顺序检查？</dd>
             </dl>
-          </details>
+          </article>
 
-          <details class="guide-details">
-            <summary>JavaScript：网页交互</summary>
-            <p>JavaScript 负责复制按钮、导航高亮、弹窗、切换等用户操作后的反应。</p>
-            <dl class="learning-dl">
-              <dt>对应当前项目</dt><dd><code>02_网页应用/prototype/script.js</code></dd>
-              <dt>学到什么程度</dt><dd>知道按钮写在 HTML 里不等于一定能工作，真正行为通常在 JavaScript 里。</dd>
-              <dt>可以这样问</dt><dd>请解释复制按钮从点击到显示“已复制”的完整过程。如果复制失败，可能有哪些原因？</dd>
-              <dt>小练习</dt><dd>试着点击复制按钮，看按钮文字有没有变化。</dd>
-            </dl>
-          </details>
-
-          <details class="guide-details">
-            <summary>本地服务：更接近真实运行环境</summary>
-            <p>本地服务是在自己电脑上临时启动一个网页地址，让浏览器像访问网站一样访问项目。</p>
-            <dl class="learning-dl">
-              <dt>对应当前项目</dt><dd><code>02_网页应用/prototype/local-server.mjs</code></dd>
-              <dt>学到什么程度</dt><dd>知道直接双击 HTML 和通过本地服务访问不完全一样，本地服务不等于正式上线。</dd>
-              <dt>可以这样问</dt><dd>请解释 `node local-server.mjs 8010` 每一部分是什么意思。如果网页打不开，我该检查哪里？</dd>
-              <dt>小练习</dt><dd>试着用本地服务打开页面：<code>http://127.0.0.1:8010/index.html</code>。</dd>
-            </dl>
-          </details>
-
-          <details class="guide-details">
-            <summary>浏览器：最终验收的地方</summary>
-            <p>代码写对不等于页面看起来一定对，最终还要在浏览器里检查真实效果。</p>
-            <dl class="learning-dl">
-              <dt>当前项目要检查</dt><dd>页面能否打开、中文是否乱码、导航是否跳转、复制按钮是否工作、手机宽度是否溢出。</dd>
-              <dt>学到什么程度</dt><dd>知道截图、地址、复现步骤和控制台报错，都能帮助 Codex 快速定位问题。</dd>
-              <dt>可以这样问</dt><dd>我看到页面这里排版不对，截图如下。请判断可能是哪类问题，并告诉我需要检查哪些文件。</dd>
-              <dt>小练习</dt><dd>试着把页面缩窄到手机宽度，看看有没有文字溢出。</dd>
-            </dl>
-          </details>
-        </div>
-
-        <div class="card-grid two module-gap">
-          <article class="info-card"><h3>下一批：系统基础</h3><p>前端、后端、数据库、API、HTTP 状态码和数据流。等你开始做需要保存数据的工具或系统时再展开。</p></article>
-          <article class="info-card"><h3>再下一批：工程、上线和安全</h3><p>命令行、Git、测试、构建、部署、环境变量、密钥、权限、备份和回滚。</p></article>
-        </div>
-
-        <div class="details-stack module-gap">
-          <details class="guide-details">
-            <summary>展开：系统基础先知道这些</summary>
-            <p>系统基础不是让你马上学会后端开发，而是让你知道一个系统为什么需要保存数据、为什么会分前端和后端、页面和服务器之间怎么说话。</p>
+          <article class="learning-chapter">
+            <div class="chapter-heading">
+              <span>3.3</span>
+              <div>
+                <h3>系统协作基础</h3>
+                <p>当项目开始保存数据、多人使用，就要理解系统各部分怎么配合。</p>
+              </div>
+            </div>
+            <p class="focus-mark">重点：前端负责展示和操作，后端负责规则和数据，API 负责连接。</p>
             <dl class="learning-dl">
               <dt>前端</dt><dd>你在浏览器里看到和操作的部分，比如页面、按钮、表单和列表。</dd>
               <dt>后端</dt><dd>在服务器上处理规则、保存数据、检查权限的部分。用户通常看不见它，但系统离不开它。</dd>
               <dt>数据库</dt><dd>专门保存长期数据的地方，比如用户、订单、项目、记录和设置。</dd>
-              <dt>API</dt><dd>前端向后端要数据、提交数据时使用的约定入口，可以先理解成“页面和服务器之间的接口”。</dd>
+              <dt>API</dt><dd>页面和服务器之间的接口。前端通过它向后端要数据、提交数据。</dd>
               <dt>HTTP 状态码</dt><dd>浏览器和服务器沟通后的结果提示，比如 200 表示成功，404 表示找不到，500 表示服务器出错。</dd>
               <dt>数据流</dt><dd>一条数据从用户输入，到前端提交，再到后端处理、数据库保存，最后回到页面展示的完整路径。</dd>
-              <dt>什么时候学</dt><dd>当你的项目开始需要登录、保存记录、多人使用或长期维护时，就该让 Codex 帮你补这一批基础。</dd>
               <dt>可以这样问</dt><dd>我是技术小白，请结合当前项目解释前端、后端、数据库、API 和数据流分别是什么，并说明第一版是否真的需要它们。</dd>
             </dl>
-          </details>
+          </article>
 
-          <details class="guide-details">
-            <summary>展开：工程、上线和安全先知道这些</summary>
-            <p>工程基础关注的是“项目怎么稳定地做完、上线、保护和回退”。它不是炫技，而是避免项目上线后打不开、丢数据或泄露密钥。</p>
+          <article class="learning-chapter">
+            <div class="chapter-heading">
+              <span>3.4</span>
+              <div>
+                <h3>工程、上线和安全</h3>
+                <p>项目做完以后，还要能稳定发布、保护资料，并且出问题能回退。</p>
+              </div>
+            </div>
+            <p class="focus-mark">重点：上线前要验证，公开前要检查密钥、权限、备份和回滚。</p>
             <dl class="learning-dl">
-              <dt>命令行</dt><dd>用文字命令操作项目的地方，常用于启动服务、安装依赖、运行检查和发布项目。</dd>
-              <dt>Git</dt><dd>记录代码变化的工具。它能让你知道改了什么，也方便在出错时回到旧版本。</dd>
-              <dt>测试</dt><dd>用清单或自动化方式确认功能真的能用，不只看页面“好像没问题”。</dd>
-              <dt>构建</dt><dd>把开发中的代码整理成适合发布的文件。静态网页可能很简单，复杂应用通常必须构建。</dd>
+              <dt>命令行</dt><dd>用文字命令操作项目，常用于启动服务、安装依赖、运行检查和发布项目。</dd>
+              <dt>Git</dt><dd>记录代码变化。它能让你知道改了什么，也方便在出错时回到旧版本。</dd>
+              <dt>测试与构建</dt><dd>确认功能真的能用，并把开发中的代码整理成适合发布的文件。</dd>
               <dt>部署</dt><dd>把项目放到别人能访问的线上地址，例如 GitHub Pages、服务器或云平台。</dd>
               <dt>环境变量</dt><dd>不适合写死在代码里的配置，比如服务器地址、数据库连接信息和密钥。</dd>
               <dt>密钥和权限</dt><dd>密钥相当于系统通行证，不能放进公开代码；权限决定谁能看、改、删除哪些数据。</dd>
               <dt>备份和回滚</dt><dd>备份是出问题前留下退路，回滚是上线失败时恢复到上一个可用版本。</dd>
               <dt>可以这样问</dt><dd>请帮我做上线前检查：命令、Git 状态、构建、环境变量、密钥、权限、备份和回滚分别要确认什么？</dd>
             </dl>
-          </details>
+          </article>
         </div>
       </section>
 
@@ -269,6 +261,10 @@
         <p class="section-kicker">04 / Templates</p>
         <h2>对话模板</h2>
         <p class="section-lead">这些模板可以直接复制。把方括号里的内容换成你的项目情况，再发给 Codex，就能少走很多弯路。</p>
+        <div class="chapter-points" aria-label="本章重点">
+          <span>本章重点</span>
+          <p>模板不是答案，而是帮你把需求说清楚的起点。复制以后一定要换成自己的项目情况。</p>
+        </div>
         <div class="template-grid">
           <details class="template-card" open>
             <summary><span><strong>项目启动模板</strong><em>适合刚开始一个新项目时使用。</em></span><button type="button" data-copy-target="template-start">复制</button></summary>
@@ -408,9 +404,13 @@
       </section>
 
       <section id="systems-case" class="section">
-        <p class="section-kicker">05 / Systems & Case</p>
-        <h2>复杂系统与案例</h2>
+        <p class="section-kicker">05 / System Breakdown</p>
+        <h2>复杂系统拆解</h2>
         <p class="section-lead">复杂系统不要一口气做完。先做主数据，再加详情、流程、同步、记录、权限和部署。每一步都能验收，项目才不容易失控。</p>
+        <div class="chapter-points" aria-label="本章重点">
+          <span>本章重点</span>
+          <p>复杂系统先主数据，再流程和权限。不要一上来做全套，先让第一条核心流程跑起来。</p>
+        </div>
 
         <details class="guide-details" open>
           <summary>复杂系统应该怎么拆</summary>
@@ -425,24 +425,16 @@
             <article class="stage-card"><span>08</span><h3>部署备份</h3><p>上线前检查环境、日志、备份和回滚方案。</p></article>
           </div>
         </details>
-
-        <details class="guide-details">
-          <summary>完整案例：个人项目管理系统</summary>
-          <ol class="timeline compact">
-            <li><strong>最初想法</strong><span>记录想法、需求和项目进度。</span></li>
-            <li><strong>关键转折</strong><span>项目池是主数据，Codex 项目是外部来源。</span></li>
-            <li><strong>原型阶段</strong><span>先做项目进度驾驶舱。</span></li>
-            <li><strong>功能阶段</strong><span>逐步加入项目池、进展图、详情、同步、轨迹和简报。</span></li>
-            <li><strong>部署阶段</strong><span>准备服务器部署方案。</span></li>
-            <li><strong>归档阶段</strong><span>整理项目文档、源码、数据和主会话。</span></li>
-          </ol>
-        </details>
       </section>
 
       <section id="ship" class="section">
         <p class="section-kicker">06 / Ship</p>
         <h2>验收、部署与归档</h2>
         <p class="section-lead">代码写完不等于项目结束。你还要确认它能打开、能使用、能解释、能回看，并且没有把密码、密钥或无关源码放进归档。</p>
+        <div class="chapter-points" aria-label="本章重点">
+          <span>本章重点</span>
+          <p>能运行只是开始，能验证、能部署、能回看才算收口。上线和归档前尤其要检查密钥和权限。</p>
+        </div>
 
         <details class="guide-details" open>
           <summary>验收检查清单</summary>

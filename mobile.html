@@ -13,9 +13,36 @@
 </head>
 <body>
   <header class="mobile-hero" id="top">
-    <p class="eyebrow">手机版阅读页</p>
-    <h1>Codex 编程学习指南</h1>
-    <p>给技术小白的一份陪跑手册：先把想法说清楚，再和 Codex 一起拆小、实现、验收和归档。</p>
+    <div class="hero-topbar" aria-label="页面信息">
+      <span>Codex Guide</span>
+      <span>手机版</span>
+    </div>
+    <div class="hero-copy">
+      <p class="eyebrow">技术小白的 AI 编程开局工具</p>
+      <h1>不会编程，也能用 Codex 做项目？</h1>
+      <p>先别急着让 AI 写代码。把目标、第一版和验收方式说清楚，Codex 才能稳定帮你把想法做成网页、工具和小系统。</p>
+      <div class="hero-meta" aria-label="指南内容摘要">
+        <span>需求拆解</span>
+        <span>对话模板</span>
+        <span>验收归档</span>
+      </div>
+    </div>
+    <div class="hero-preview" aria-labelledby="hero-preview-title">
+      <div class="preview-window">
+        <div class="preview-toolbar">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <p class="eyebrow">先别急着写代码</p>
+        <h2 id="hero-preview-title">先说清 3 件事</h2>
+        <ol class="preview-list">
+          <li><strong>给谁用？</strong><span>目标用户和真实场景。</span></li>
+          <li><strong>第一版做什么？</strong><span>只保留能跑起来的核心功能。</span></li>
+          <li><strong>怎么验收？</strong><span>能打开、能使用、能解释、能回看。</span></li>
+        </ol>
+      </div>
+    </div>
     <div class="hero-actions">
       <a href="#start">从第一步开始</a>
       <a href="#templates">复制模板</a>
@@ -29,15 +56,16 @@
       <option value="#workflow">标准工作流</option>
       <option value="#basics">技术基础</option>
       <option value="#templates">对话模板</option>
-      <option value="#case">复杂系统与案例</option>
+      <option value="#case">复杂系统拆解</option>
       <option value="#ship">验收部署归档</option>
     </select>
   </nav>
 
   <main>
     <section class="focus-card" aria-labelledby="three-things">
-      <p class="eyebrow">先别急着写代码</p>
-      <h2 id="three-things">你现在只要抓住三件事</h2>
+      <p class="eyebrow">开局口诀</p>
+      <h2 id="three-things">别对 AI 说“帮我做个系统”</h2>
+      <p class="lead">这句话太大，AI 很容易做偏。你只要先把下面三件事讲清楚，项目就会稳很多。</p>
       <ol class="focus-list">
         <li><strong>说清目标</strong><span>这个项目给谁用，解决什么问题。</span></li>
         <li><strong>拆小版本</strong><span>第一版只做能跑起来的核心功能。</span></li>
@@ -51,9 +79,9 @@
       <div class="directory-grid">
         <a href="#start"><span>01</span><strong>快速入门</strong><em>先分清你和 Codex 各自负责什么。</em></a>
         <a href="#workflow"><span>02</span><strong>标准工作流</strong><em>按步骤做，项目才不容易散。</em></a>
-        <a href="#basics"><span>03</span><strong>技术基础</strong><em>先补项目常识，不用先学完整编程课。</em></a>
+        <a href="#basics"><span>03</span><strong>技术基础</strong><em>了解基础知识，不懂就让 Codex 用大白话解释。用最简单的方式理解。</em></a>
         <a href="#templates"><span>04</span><strong>对话模板</strong><em>复制后替换方括号里的内容就能用。</em></a>
-        <a href="#case"><span>05</span><strong>复杂系统与案例</strong><em>先主数据，再流程、权限和部署。</em></a>
+        <a href="#case"><span>05</span><strong>复杂系统拆解</strong><em>先主数据，再流程、权限和部署。</em></a>
         <a href="#ship"><span>06</span><strong>验收部署归档</strong><em>写完代码后，把项目稳稳收口。</em></a>
       </div>
     </section>
@@ -62,6 +90,10 @@
       <p class="eyebrow">01 / 快速入门</p>
       <h2>先记住这个分工</h2>
       <p class="lead">你不用马上变成程序员，但你要负责说清目标、确认方向、验收结果。Codex 负责拆开、写出来、测一遍、讲明白。</p>
+      <div class="chapter-points" aria-label="本章重点">
+        <strong>本章重点</strong>
+        <span>分清你负责判断，Codex 负责执行。</span>
+      </div>
       <div class="mini-grid">
         <article>
           <h3>你负责</h3>
@@ -99,6 +131,10 @@
       <p class="eyebrow">02 / 标准工作流</p>
       <h2>不要跳步骤</h2>
       <p class="lead">复杂系统不是一句话变出来的。先定目标、拆第一版、做一点、验一点，慢慢堆稳。</p>
+      <div class="chapter-points" aria-label="本章重点">
+        <strong>本章重点</strong>
+        <span>先定范围，再小步开发，最后按清单收口。</span>
+      </div>
       <ol class="step-list">
         <li><strong>说清目标</strong><span>给谁用，解决什么问题。</span></li>
         <li><strong>拆 MVP</strong><span>只保留第一版必须能跑起来的功能。</span></li>
@@ -115,35 +151,80 @@
       <p class="eyebrow">03 / 技术基础</p>
       <h2>先补项目常识</h2>
       <p class="lead">不用先学完整编程课。先知道网页由哪些文件组成，样式在哪里改，按钮为什么会动，最后怎么在浏览器里验收。</p>
-      <div class="basics-list">
-        <article><h3>HTML</h3><p>网页骨架，对应 <code>index.html</code>。</p></article>
-        <article><h3>CSS</h3><p>页面外观，对应 <code>styles.css</code>。</p></article>
-        <article><h3>JavaScript</h3><p>按钮和交互，对应 <code>script.js</code>。</p></article>
-        <article><h3>本地服务</h3><p>更接近真实访问，对应 <code>local-server.mjs</code>。</p></article>
-        <article><h3>浏览器</h3><p>最终验收页面、按钮、手机宽度和报错。</p></article>
+      <div class="chapter-points" aria-label="本章重点">
+        <strong>本章重点</strong>
+        <span>先学会看懂项目结构，再理解页面、数据、上线和安全。</span>
       </div>
-      <details class="mobile-details">
-        <summary>下一批：系统基础</summary>
-        <div class="mistake-list">
-          <p><strong>前端：</strong>你在浏览器里看到和操作的页面。</p>
-          <p><strong>后端：</strong>在服务器上处理规则、保存数据和检查权限的部分。</p>
-          <p><strong>数据库：</strong>长期保存用户、项目、订单、记录等数据的地方。</p>
-          <p><strong>API：</strong>页面向服务器要数据、提交数据时使用的入口。</p>
-          <p><strong>HTTP 状态码：</strong>浏览器和服务器沟通后的结果提示，比如 200、404、500。</p>
-          <p><strong>数据流：</strong>数据从输入、提交、保存到展示的完整路径。</p>
-        </div>
-      </details>
-      <details class="mobile-details">
-        <summary>再下一批：工程、上线和安全</summary>
-        <div class="mistake-list">
-          <p><strong>命令行：</strong>用文字命令启动服务、运行检查和管理项目。</p>
-          <p><strong>Git：</strong>记录代码变化，方便知道改了什么和回到旧版本。</p>
-          <p><strong>测试和构建：</strong>上线前确认功能能用，并整理出适合发布的文件。</p>
-          <p><strong>部署：</strong>把项目放到别人能访问的线上地址。</p>
-          <p><strong>环境变量和密钥：</strong>保存不适合写进公开代码的配置和通行证。</p>
-          <p><strong>权限、备份和回滚：</strong>控制谁能做什么，并给项目留下出问题时的退路。</p>
-        </div>
-      </details>
+      <div class="learning-path">
+        <article class="learning-chapter">
+          <div class="chapter-heading">
+            <span>3.1</span>
+            <div>
+              <h3>网页三件套</h3>
+              <p>先知道网页由哪些文件组成，改哪里会影响什么。</p>
+            </div>
+          </div>
+          <p class="focus-mark"><strong>重点：</strong>HTML 管结构，CSS 管外观，JavaScript 管交互。</p>
+          <div class="concept-grid">
+            <article><h4>HTML</h4><p>网页骨架，对应 <code>index.html</code>。</p></article>
+            <article><h4>CSS</h4><p>页面外观，对应 <code>styles.css</code>。</p></article>
+            <article><h4>JavaScript</h4><p>按钮和交互，对应 <code>script.js</code>。</p></article>
+          </div>
+        </article>
+
+        <article class="learning-chapter">
+          <div class="chapter-heading">
+            <span>3.2</span>
+            <div>
+              <h3>本地运行与浏览器验收</h3>
+              <p>项目不是“看起来有页面”就算完成，要能稳定打开、操作和检查。</p>
+            </div>
+          </div>
+          <p class="focus-mark"><strong>重点：</strong>本地服务负责预览，浏览器负责最终验收。</p>
+          <div class="concept-grid">
+            <article><h4>本地服务</h4><p>更接近真实访问，对应 <code>local-server.mjs</code>。</p></article>
+            <article><h4>浏览器</h4><p>验收页面、按钮、手机宽度和报错。</p></article>
+          </div>
+        </article>
+
+        <article class="learning-chapter">
+          <div class="chapter-heading">
+            <span>3.3</span>
+            <div>
+              <h3>系统协作基础</h3>
+              <p>当项目变复杂时，要知道页面、服务器和数据之间怎么配合。</p>
+            </div>
+          </div>
+          <p class="focus-mark"><strong>重点：</strong>前端负责展示和操作，后端负责规则和数据，API 负责连接。</p>
+          <div class="concept-list">
+            <p><strong>前端：</strong>你在浏览器里看到和操作的页面。</p>
+            <p><strong>后端：</strong>在服务器上处理规则、保存数据和检查权限的部分。</p>
+            <p><strong>数据库：</strong>长期保存用户、项目、订单、记录等数据的地方。</p>
+            <p><strong>API：</strong>页面向服务器要数据、提交数据时使用的入口。</p>
+            <p><strong>HTTP 状态码：</strong>浏览器和服务器沟通后的结果提示，比如 200、404、500。</p>
+            <p><strong>数据流：</strong>数据从输入、提交、保存到展示的完整路径。</p>
+          </div>
+        </article>
+
+        <article class="learning-chapter">
+          <div class="chapter-heading">
+            <span>3.4</span>
+            <div>
+              <h3>工程、上线和安全</h3>
+              <p>做出来只是第一步，还要能检查、发布、备份，并保护敏感信息。</p>
+            </div>
+          </div>
+          <p class="focus-mark"><strong>重点：</strong>上线前要验证，公开前要检查密钥、权限、备份和回滚。</p>
+          <div class="concept-list">
+            <p><strong>命令行：</strong>用文字命令启动服务、运行检查和管理项目。</p>
+            <p><strong>Git：</strong>记录代码变化，方便知道改了什么和回到旧版本。</p>
+            <p><strong>测试和构建：</strong>上线前确认功能能用，并整理出适合发布的文件。</p>
+            <p><strong>部署：</strong>把项目放到别人能访问的线上地址。</p>
+            <p><strong>环境变量和密钥：</strong>保存不适合写进公开代码的配置和通行证。</p>
+            <p><strong>权限、备份和回滚：</strong>控制谁能做什么，并给项目留下出问题时的退路。</p>
+          </div>
+        </article>
+      </div>
       <div class="section-actions"><a href="#directory">回到目录</a><a href="#templates">下一节</a></div>
     </section>
 
@@ -151,6 +232,10 @@
       <p class="eyebrow">04 / 对话模板</p>
       <h2>复制后就能开始</h2>
       <p class="lead">把方括号里的内容换成你的项目情况，再发给 Codex。</p>
+      <div class="chapter-points" aria-label="本章重点">
+        <strong>本章重点</strong>
+        <span>模板不是答案，是帮你把需求说清楚的起点。</span>
+      </div>
       <div class="template-list">
         <details class="template-card" open>
           <summary><span><strong>项目启动模板</strong><em>刚开始一个新项目时用。</em></span></summary>
@@ -290,9 +375,13 @@
     </section>
 
     <section class="mobile-section" id="case">
-      <p class="eyebrow">05 / 复杂系统与案例</p>
+      <p class="eyebrow">05 / 复杂系统拆解</p>
       <h2>复杂系统要分阶段做</h2>
       <p class="lead">先做主数据，再加详情、流程、同步、记录、权限和部署。每一步都能验收，项目才不容易失控。</p>
+      <div class="chapter-points" aria-label="本章重点">
+        <strong>本章重点</strong>
+        <span>复杂系统不要一次做完，先主数据，再流程和权限。</span>
+      </div>
       <div class="stage-list">
         <article><span>01</span><p><strong>项目池：</strong>先把项目名称、目标、状态和优先级记下来。</p></article>
         <article><span>02</span><p><strong>项目详情：</strong>再看每个项目的背景、需求、进度和文档。</p></article>
@@ -310,6 +399,10 @@
       <p class="eyebrow">06 / 验收部署归档</p>
       <h2>写完代码后要收口</h2>
       <p class="lead">确认它能打开、能使用、能解释、能回看，并且没有把密码、密钥或无关源码放进归档。</p>
+      <div class="chapter-points" aria-label="本章重点">
+        <strong>本章重点</strong>
+        <span>能运行只是开始，能验证、能部署、能回看才算收口。</span>
+      </div>
       <ul class="check-list">
         <li>Codex 有没有说明改了哪些文件？</li>
         <li>有没有说明实现了什么？</li>
